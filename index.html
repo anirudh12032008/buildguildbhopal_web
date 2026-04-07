@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:description" content="Build Guild Bhopal: A 1-day hardware meetup for teens. Part of Hack Club Blueprint's global Build Guilds week.">
+  <meta property="og:title" content="Build Guild Bhopal - Hack Club">
+  <title>Build Guild Bhopal - Hack Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/webp" href="favicon.webp" />
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="#" class="logo-link" aria-label="Hack Club Blueprint">
+        <img src="image.png" alt="Hack Club Blueprint, Hack Club, and AMD logo" class="brand-logo-img">
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="#start">START HERE</a>
+      <a href="#about">ABOUT</a>
+      <a href="#schedule">SCHEDULE</a>
+      <a href="#organizers">ORGANIZERS</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://blueprint.hackclub.com/guilds/invite/bhopal" target="_blank" class="cta-btn">REGISTER</a>
+    </nav>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-brand-row">
+      <img src="image.png" alt="Hack Club Blueprint, Hack Club, and AMD logo" class="hero-brand-image">
+      <p class="hero-presented-by">HACK CLUB BLUEPRINT PRESENTS <span class="hero-free-inline">FREE TO ATTEND</span></p>
+    </div>
+    <h1 class="glitch-text" data-text="BUILD GUILD BHOPAL">BUILD GUILD BHOPAL</h1>
+    <p class="hero-subtitle">A free, one-day hardware meetup for teens in Bhopal. Learn the basics, build with others, and leave with a real project you made yourself.</p>
+
+    <div class="hero-info">
+      <div class="info-box">
+        <div class="info-label">DATE</div>
+        <div class="info-value">APRIL 19, 2026</div>
+      </div>
+      <div class="info-box">
+        <div class="info-label">AUDIENCE</div>
+        <div class="info-value">AGES 13 - 18</div>
+      </div>
+      <div class="info-box">
+        <div class="info-label">VENUE</div>
+        <div class="info-value">BHOPAL, INDIA</div>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="https://blueprint.hackclub.com/guilds/invite/bhopal" target="_blank" class="btn btn-primary">REGISTER FOR FREE</a>
+    </div>
+  </div>
+</section>
+
+<!-- START HERE SECTION -->
+<section class="section" id="start">
+  <div class="section-content section-content-wide">
+    <h2>START HERE</h2>
+    <p class="section-subtitle">If you’ve never been to a Hack Club event before, follow these three steps: understand the vibe, register, then show up and build with help.</p>
+
+    <div class="start-grid">
+      <article class="start-card">
+        <div class="start-step">01</div>
+        <h3>Know what this is</h3>
+        <p>Build Guild Bhopal is a friendly teen meetup for anyone 13-18. No hardware or software background needed.</p>
+      </article>
+
+      <article class="start-card">
+        <div class="start-step">02</div>
+        <h3>Register for free</h3>
+        <p>Reserve your spot with the registration link. It’s completely free and gives you the details you need to attend.</p>
+        <a href="https://blueprint.hackclub.com/guilds/invite/bhopal" target="_blank" class="text-link">REGISTER NOW</a>
+      </article>
+
+      <article class="start-card">
+        <div class="start-step">03</div>
+        <h3>Join the Slack and come along</h3>
+        <p>Join the Hack Club Slack to ask questions, say hi, and stay updated. Then just show up ready to meet people and make something.</p>
+        <a href="https://hackclub.slack.com/archives/C0AMW19RRL5" target="_blank" class="text-link">OPEN SLACK</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+  <div class="section-content">
+    <h2>WHAT IS BUILD GUILD?</h2>
+    <p><strong>Build Guild Bhopal</strong> is part of Hack Club Blueprint's global Build Guilds week. Show up, learn the basics, build with other teens, and (hopefully) leave with a newly-discovered passion for hardware!</p>
+    <p><strong>100% FREE.</strong> Ages 13-18. Beginner-friendly. Hack Club funded. Built to help more Bhopal teens get into hardware, design, and building.</p>
+    <div style="margin-top: 2rem; padding: 1.5rem; border: 2px solid #ffc857; background: rgba(255,200,87,0.05);">
+      <p style="margin: 0; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">This is your sign.</p>
+      <p style="margin: 0.5rem 0 0;">No experience needed. No applications. No fees. Just show up and build something amazing with other teens.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PAST EVENTS SECTION -->
+<section class="section" id="past-events">
+  <div class="section-content section-content-wide">
+    <h2>PAST EVENTS</h2>
+    <p class="section-subtitle">A quick look at moments from earlier Blueprint meetups and guild sessions.</p>
+
+    <div class="carousel-shell">
+      <button class="carousel-btn carousel-btn-prev" data-target="pastEventsGrid" aria-label="Previous past event">&#10094;</button>
+      <div class="carousel-track past-events-grid" id="pastEventsGrid"></div>
+      <button class="carousel-btn carousel-btn-next" data-target="pastEventsGrid" aria-label="Next past event">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- BUILDS HIGHLIGHT SECTION -->
+<section class="section alt-bg" id="builds-highlights">
+  <div class="section-content section-content-wide">
+    <h2>MORE BUILDS</h2>
+    <p class="section-subtitle">A few more examples of the kind of builds teens ship at Blueprint events.</p>
+
+    <div class="carousel-shell">
+      <button class="carousel-btn carousel-btn-prev" data-target="projectStrip" aria-label="Previous build">&#10094;</button>
+      <div class="carousel-track projects-strip" id="projectStrip"></div>
+      <button class="carousel-btn carousel-btn-next" data-target="projectStrip" aria-label="Next build">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE SECTION -->
+<section class="section alt-bg" id="schedule">
+  <div class="section-content">
+    <h2>WHAT'S THE PLAN</h2>
+    <p class="section-subtitle">Think of this as a friendly teen meetup with hands-on making. No hardware background, no coding background, no pressure.</p>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-time">11:00 AM – 11:30 AM</div>
+        <div class="timeline-label">Check-in, Snacks, and Meet New People</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">11:30 AM – 1:00 PM</div>
+        <div class="timeline-label">Zero-Experience Starter Session + First Build Together</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">1:00 PM – 1:30 PM</div>
+        <div class="timeline-label">Lunch + Chill Hangout</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">1:30 PM – 2:30 PM</div>
+        <div class="timeline-label">Creative Tinkering Pods (Pick a Fun Mini Challenge)</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">2:30 PM – 3:00 PM</div>
+        <div class="timeline-label">Lightning Demos and Team Shoutouts</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">3:00 PM – 4:30 PM</div>
+        <div class="timeline-label">Open Build Jam with Mentor Support</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">4:30 PM – 5:00 PM</div>
+        <div class="timeline-label">Hack Club Intro + How to Keep Building After the Meetup</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-time">5:00 PM</div>
+        <div class="timeline-label">Group Photo + Send Off</div>
+      </div>
+    </div>
+    
+    <p class="timeline-note">FINAL TIMING MAY SHIFT A LITTLE. THE VIBE: FRIENDLY, BEGINNER-SAFE, AND FULLY HANDS-ON FOR EVERY TEEN.</p>
+  </div>
+</section>
+
+<!-- ORGANIZERS SECTION -->
+<section class="section" id="organizers">
+  <div class="section-content">
+    <h2>100% BY TEENS, FOR TEENS.</h2>
+    <p>Meet the organizer bringing you Build Guild Bhopal:</p>
+
+    <div class="organizers-grid single-organizer">
+      <a href="https://www.instagram.com/anirudh_sahu_12/" target="_blank" rel="noreferrer" class="organizer-link" aria-label="Open Anirudh Sahu Instagram">
+        <div class="organizer-card organizer-card-featured">
+          <img src="https://avatars.githubusercontent.com/u/71056030?v=4" alt="Anirudh Sahu" class="organizer-photo">
+          <h3>Anirudh Sahu</h3>
+          <p>Organizer</p>
+          <span class="organizer-chip">Bhopal Lead</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="section alt-bg" id="faq">
+  <div class="section-content">
+    <h2>YOUR QUESTIONS, ANSWERED.</h2>
+    <p>Still curious? Reach out to bhopal@blueprint.hackclub.com!</p>
+    
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>WHAT IS BUILD GUILD?</summary>
+        <p>A 1-day hardware meetup organized as part of Hack Club Blueprint's global Build Guilds week. Hack Club funds local organizers to run events in their cities. Free, open to any teen who's curious about circuits, boards, and hardware.</p>
+      </details>
+      
+      <details class="faq-item">
+        <summary>IS IT FREE?</summary>
+        <p>Yes! 100% free. Hack Club covers all costs including materials, tools, food, and venue. No hidden fees.</p>
+      </details>
+      
+      <details class="faq-item">
+        <summary>DO I NEED HARDWARE EXPERIENCE?</summary>
+        <p>Absolutely not! This event is designed for complete beginners. We'll teach you everything. Just bring curiosity and enthusiasm.</p>
+      </details>
+      
+      <details class="faq-item">
+        <summary>WHO CAN ATTEND?</summary>
+        <p>Anyone aged 13-18. Beginners, experienced builders, all welcome.</p>
+      </details>
+      
+      <details class="faq-item">
+        <summary>WHAT SHOULD I BRING?</summary>
+        <p>Just yourself! Bring a laptop if you have one, but we have spares. All tools and components are provided.</p>
+      </details>
+      
+      <details class="faq-item">
+        <summary>WHERE IS THE VENUE?</summary>
+        <p>Location to be announced soon. We're working on securing a central, accessible venue in Bhopal.</p>
+      </details>
+      
+      <details class="faq-item">
+        <summary>WILL THERE BE FOOD?</summary>
+        <p>Yes! Lunch and snacks are included throughout the day. Let us know about dietary restrictions during registration.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP SECTION -->
+<section class="section" id="rsvp">
+  <div class="section-content rsvp-content">
+    <h2>READY TO JOIN THE GUILD?</h2>
+    <p>Come for a fun, friendly teen meetup where you can try hardware, make friends, and build cool stuff even if you're starting from zero.</p>
+    
+    <div class="rsvp-box">
+      <a href="https://blueprint.hackclub.com/guilds/invite/bhopal" target="_blank" class="btn btn-primary">RESERVE YOUR BENCH NOW</a>
+      <p class="rsvp-note">Strictly for teenagers aged 13-18. FREE. Hack Club funded.</p>
+    </div>
+
+    <div class="share-section">
+      <p>Share with friends!</p>
+      <div class="share-buttons">
+        <a href="https://wa.me/?text=Build%20amazing%20hardware%20with%20Build%20Guild%20Bhopal%20by%20Hack%20Club%20-%20FREE%20on%20April%2019th.%20Register%3A%20https%3A%2F%2Fblueprint.hackclub.com%2Fguilds%2Finvite%2Fbhopal" target="_blank" class="share-btn">WhatsApp</a>
+        <a href="https://twitter.com/intent/tweet?text=Building%20hardware%20%F0%9F%8E%89%20Build%20Guild%20Bhopal%20by%20%40HackClub%20-%20FREE%20on%20April%2019.%20Sign%20up%3A%20https%3A%2F%2Fblueprint.hackclub.com%2Fguilds%2Finvite%2Fbhopal" target="_blank" class="share-btn">Twitter</a>
+        <a href="https://hackclub.slack.com/archives/C0AMW19RRL5" target="_blank" class="share-btn">Slack</a>
+        <a href="https://www.instagram.com/buildguildbhopal/" target="_blank" class="share-btn">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLUEPRINT SECTION -->
+<section class="section alt-bg" id="blueprint">
+  <div class="section-content">
+    <h2>PART OF A GLOBAL MOVEMENT</h2>
+    <p>Build Guild is part of Hack Club Blueprint's <strong>Global Build Guilds Week</strong> (April 13-19, 2026). This week, 100+ cities around the world are running hardware events for teens. From New York to Tokyo, from São Paulo to Singapore — we're building together.</p>
+    
+    <div style="margin-top: 3rem; padding: 2rem; border-left: 4px solid #ffc857; background: rgba(255,200,87,0.08);">
+      <h3 style="font-size: 1.3rem; margin-bottom: 0.8rem; color: #ffc857;">WHAT IS HACK CLUB BLUEPRINT?</h3>
+      <p>Blueprint is Hack Club's global hardware initiative. We empower teenagers to learn electronics, design PCBs, build drones, and ship real hardware projects. Founded by teens, funded by Hack Club (a 501(c)(3) nonprofit), and run for teens around the world.</p>
+      <p style="margin-top: 1rem;"><strong>50,000+ teen makers</strong> in the Hack Club community. <strong>350+ clubs</strong> running in schools and communities worldwide. <strong>Completely free.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <img src="image.png" alt="Hack Club Blueprint, Hack Club, and AMD logo" class="footer-brand-image">
+    <p>FREE HARDWARE EVENTS FOR TEENS</p>
+    <p style="margin: 1rem 0 1.5rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: #ffc857;">APRIL 19, 2026 // BHOPAL, INDIA</p>
+    <div class="footer-links">
+      <a href="https://hackclub.com/" target="_blank">HACK CLUB</a>
+      <a href="https://blueprint.hackclub.com/" target="_blank">BLUEPRINT</a>
+      <a href="https://hackclub.com/slack/" target="_blank">SLACK</a>
+      <a href="https://www.instagram.com/buildguildbhopal/" target="_blank">INSTAGRAM</a>
+    </div>
+    <p style="margin-top: 1.5rem; font-size: 0.85rem; color: #a8c5e0;">made by anirudh with love.</p>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
