@@ -2,25 +2,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectData = [
     {
       title: 'Cyberboard V2',
+      href: 'https://github.com/notaroomba/cyberboard',
       image: 'https://github.com/notaroomba/cyberboard/blob/main/assets/banner.png?raw=true',
       alt: 'A circuit board on a desk',
       description: 'A Raspberry Pi Pico-sized STM32 development board with Bluetooth, battery support, IMU and a barometer!'
     },
     {
       title: 'AngstromIO-devboard',
-      image: 'https://private-user-images.githubusercontent.com/151221667/556464246-633cc341-a372-48ec-8386-ac6ccdab7370.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU1MzMzNDQsIm5iZiI6MTc3NTUzMzA0NCwicGF0aCI6Ii8xNTEyMjE2NjcvNTU2NDY0MjQ2LTYzM2NjMzQxLWEzNzItNDhlYy04Mzg2LWFjNmNjZGFiNzM3MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNDA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDQwN1QwMzM3MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NDg0ZjQ0Mjg0M2IxYzdhNGNmZDAxMmI2N2M5NWNkYTE1YTZjZmJjYzM1ZGY2Y2I1MWUwNGFiNWFlMjY1YzI4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.LY2EuO6r_qxJgb9ZHE1F9pOIh2dTVDW5CRxBoMB-0o0',
+      href: 'https://github.com/Dieu-de-l-elec/AngstromIO-devboard',
+      image: '/1.png',
       alt: 'Electronics prototyping setup',
       description: 'AngstromIO is one of the smallest devboards out there, barely longer than a USB-C connector.'
     },
     {
       title: 'ES_01 E-ink Smartwatch',
+      href: 'https://github.com/sandgum/Triangulate-ES_01-Watch',
       image: '/watch.png',
       alt: 'LED lights and electronics',
       description: 'An ultra-thin ESP32S3-based smartwatch'
     },
     {
       title: 'KillerSplit',
-      image: 'https://private-user-images.githubusercontent.com/122672193/530468387-f562f993-20c8-43f6-930b-d2d696f2134c.jpeg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzU1MzMxODQsIm5iZiI6MTc3NTUzMjg4NCwicGF0aCI6Ii8xMjI2NzIxOTMvNTMwNDY4Mzg3LWY1NjJmOTkzLTIwYzgtNDNmNi05MzBiLWQyZDY5NmYyMTM0Yy5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDQwNyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA0MDdUMDMzNDQ0WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDA3YjgxYTBkZTg3MGJmNzdmZTdjMjRkN2IxN2Y5ZWI4NjMwYTkwNDAzYWEyNDBkZmQ0Mzk0ZWQ4NjMxNjlkMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.fkDVsaW5-HYp7W-p4sNOWdWUFsyBUvetfudmpBKPFk0',
+      href: 'https://github.com/MrKillerShaunBa/KillerSplit',
+      image: '/2.png',
       alt: 'Drone and hardware project',
       description: 'An ergonomic, wireless, split, low-profile keyboard.'
     }
@@ -76,13 +80,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (projectStrip) {
     projectStrip.innerHTML = projectData.map((entry) => `
-      <article class="project-card">
-        <img src="${entry.image}" alt="${entry.alt}">
-        <div class="project-overlay">
-          <h3>${entry.title}</h3>
-          <p>${entry.description}</p>
-        </div>
-      </article>
+      <a class="project-link" href="${entry.href}" target="_blank" rel="noreferrer">
+        <article class="project-card">
+          <img src="${entry.image}" alt="${entry.alt}">
+          <div class="project-overlay">
+            <h3>${entry.title}</h3>
+            <p>${entry.description}</p>
+          </div>
+        </article>
+      </a>
     `).join('');
   }
 
