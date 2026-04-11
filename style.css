@@ -337,6 +337,10 @@ a:hover {
 
 .hero-actions {
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .glitch-text {
@@ -387,6 +391,11 @@ a:hover {
   color: var(--accent);
 }
 
+.hero-actions .btn,
+.hero-actions .btn-secondary {
+  cursor: pointer !important;
+}
+
 .btn-primary {
   background: var(--accent);
   color: var(--bg-darker);
@@ -398,6 +407,20 @@ a:hover {
   color: var(--bg-darker);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(255,200,87,0.3);
+}
+
+.btn-secondary {
+  color: var(--light-blue);
+  border-color: rgba(219, 228, 238, 0.45);
+  background: rgba(8, 28, 53, 0.35);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  background: rgba(255, 200, 87, 0.12);
+  transform: translateY(-2px);
 }
 
 /* Sections */
