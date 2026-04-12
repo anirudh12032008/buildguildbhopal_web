@@ -880,7 +880,10 @@ a:hover {
 
 .rsvp-box {
   border: 2px solid var(--accent);
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
   margin: 3rem 0;
   background: rgba(255,200,87,0.05);
 }
